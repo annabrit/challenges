@@ -8,9 +8,6 @@ function checkAlmostSorted(arr) {
   let leftIndex = findFirstUnordered(arr);
   let rightIndex = findLastUnordered(arr);
 
-  //really only useful to redefine the right index to the last value for inputs where the run goes to the end
-  rightIndex = rightIndex == -1 ? arr.length - 1 : rightIndex;
-
   //try case 2: is swapped
   if (checkSorted(swapTwo(arr, leftIndex, rightIndex))) {
     return `yes swap ${leftIndex} ${rightIndex}`;

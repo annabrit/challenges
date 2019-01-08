@@ -23,3 +23,7 @@ test('reverse including beginning index', () => {
 test('no swap possible', () => {
   expect(checkAlmostSorted([1, 3, 4, 2])).toBe('no');
 });
+
+test('should be no', () => {
+  expect(checkAlmostSorted([1, 8, 7, 11, 14, 10, 17])).toBe('no');
+});
